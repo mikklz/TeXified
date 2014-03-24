@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper]{report}
 \setlength{\headheight}{27.5pt} %Sæt din mor op, 1-2-3
+%usepackages
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage{graphicx}
@@ -11,7 +12,12 @@
 \usepackage{titling}
 \usepackage{amsmath}
 \usepackage{natbib}
+%fuck der var mange, man. Så er det commands tid! :)
+\renewcommand{\bibname}{Litteraturliste}
+\renewcommand{\contentsname}{Indholdsfortegnelse}
 \renewcommand{\familydefault}{\sfdefault}
+\newcommand{\bestcite}[1]{(\citeauthor{#1}, \citeyear{#1})}
+%omg, ikke flere?? Det kommer nok, ven. :)
 \pretitle{\noindent\rule{\linewidth}{2pt}\begin{center}\LARGE}
 \posttitle{\end{center}\noindent\rule{\linewidth}{2pt}}
 \title{Projektcase 2}
@@ -47,10 +53,14 @@ Antal Normalsider: ??\\
 Antal bilag: ??}\\
 \raggedright %Flyt din mor til venstre
 \newpage
+\section{Indledning}
+\tableofcontents
+\newpage
 \pagestyle{fancy}
-\subsection{Indledning}
+\section{Problemformulering}
+\bestcite{El:1} %test af lort
 
-\bibliographystyle{plain}
+\bibliographystyle{natplain}
 \bibliography{biblo}
 \end{document}
 
