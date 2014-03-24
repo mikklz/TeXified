@@ -1,12 +1,17 @@
 \documentclass[12pt,a4paper]{report}
-\linespread {1.5}
 \setlength{\headheight}{27.5pt} %Sæt din mor op, 1-2-3
 \usepackage[utf8]{inputenc}
+\usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{kpfonts}
-\usepackage{titling}
 \usepackage[left=2cm,right=2cm,top=3cm,bottom=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{uarial}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{natbib}
+\renewcommand{\familydefault}{\sfdefault}
 \pretitle{\noindent\rule{\linewidth}{2pt}\begin{center}\LARGE}
 \posttitle{\end{center}\noindent\rule{\linewidth}{2pt}}
 \title{Projektcase 2}
@@ -16,8 +21,9 @@
 \chead{Aarhus Maskinmesterskole\\Projektcase 2}
 \rhead{DATO\\}
 \lfoot{}
-\cfoot{}
-\rfoot{\thepage}
+\cfoot{\thepage}
+\rfoot{}
+\setcounter{secnumdepth}{0} % sections er toplevel
 \begin{document}
 \pagestyle{empty}
 \maketitle
@@ -25,6 +31,7 @@
 \begin{huge}
 TITEL???
 \end{huge}\\
+\vspace*{3\baselineskip}
 \raggedright {\textbf{Udarbejdet af}} \hfill {\textbf{Vejleder}\\
 Gruppe E \hfill Anton Lejsgaard\\
 Per Møldrup Jensen\\
@@ -33,6 +40,7 @@ Morten Jørgensen\\
 Thomas Grube\\
 Daniel Jeppe\\
 Mikkel Laustrup}\\
+\vfill
 \centering{
 Dato for aflevering: ??\\
 Antal Normalsider: ??\\
@@ -40,13 +48,9 @@ Antal bilag: ??}\\
 \raggedright %Flyt din mor til venstre
 \newpage
 \pagestyle{fancy}
-\setcounter{secnumdepth}{0} % sections er top level
-\section{Indledning}
-\newpage
-\tableofcontents
-\newpage
-\section{Problemformulering}
-\subsection{Problemstillinger}
-\subsection{Afgrænsninger}
+\subsection{Indledning}
+
+\bibliographystyle{plain}
+\bibliography{biblo}
 \end{document}
-}
+
